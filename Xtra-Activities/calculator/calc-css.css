@@ -1,0 +1,30 @@
+/* //empty */
+#calculator {
+    border: 5px solid black;
+    width: 430px;
+    margin: 0 auto;
+    background-color: pink;
+}
+button {
+    margin: 40px;
+    transform: scale(3);
+    border-color: red;
+    background-color: rgb(254, 90, 90);
+}
+button:hover {
+    background-color: rgb(162, 13, 13);
+}
+
+#display {
+    font-size: 30px;
+    height: 25px;
+    border: 5px dotted black;
+    padding: 20px;
+    background-color: whitesmoke;
+}   
+
+#equals {
+    position: relative;
+    left: 118px;
+    width: 25%;
+}

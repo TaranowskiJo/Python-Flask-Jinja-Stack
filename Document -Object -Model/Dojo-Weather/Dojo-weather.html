@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Layout Concerns</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Dojo-Weather-CSS.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1><a href = "#" id = "home">DojoWeather</a></h1>
+        <ul>
+            <li onclick = "alert('Loading weather report...')">Burbank</li> <!-- DISPLAY ALERT ON CLICK -->
+            <li onclick = "alert('Loading weather report...')">Chicago</li> <!-- DISPLAY ALERT ON CLICK -->
+            <li onclick = "alert('Loading weather report...')">Dallas</li> <!-- DISPLAY ALERT ON CLICK -->
+        </ul>
+    </div>
+    <div class="main"> <!-- Container -->
+        <div class="sub-bar">
+            <h2>San Jose</h2>
+            <div class="degree-select">
+                <label>show temperature in: </label>
+                    <select onChange = "changeDegreeType(this)"> <!-- CONVERT W/ ALERT-->
+                        <option> °C </option>
+                        <option> °F </option>
+                    </select>
+            </div>
+        </div>
+        <div class="weather-cards">
+            <div id="card-1" class = "card">
+                <div class="top-half">
+                    <p class = "day">Today</p>
+                    <img src = "some_rain.png" alt = "some rain" class = "weather-images">
+                    <p class = "forecast">some rain</p>
+                </div>
+                <div class="temp">
+                    <p id = "tempNumber0"> 0°F</p>
+                    <p id = "tempNumber1"> 0°F</p>
+                </div>
+            </div>
+            <div id = "card-2" class = "card">
+                <div class="top-half">
+                    <p class = "day">Tomorrow</p>
+                    <img src = "some_sun.png" alt = "some sun" class = "weather-images">
+                    <p class = "forecast">some sun</p>
+                </div>
+                <div class="temp">
+                    <p  id = "tempNumber2"> 0°F</p>
+                    <p id = "tempNumber3"> 0°F</p>
+                </div>
+            </div>
+            <div id = "card-3" class = "card">
+                <div class="top-half">
+                    <p class = "day">Friday</p>
+                    <img src = "some_clouds.png" alt = "some clouds" class = "weather-images">
+                    <p class = "forecast">some clouds</p>
+                </div>
+                <div class="temp">
+                    <p id = "tempNumber4"> 0°F</p>
+                    <p id = "tempNumber5"> 0°F</p>
+                </div>
+            </div>
+            <div id = "card-4" class = "card">
+                <div class="top-half">
+                    <p class = "day">Saturday</p>
+                    <img src = "some_sun.png" alt = "some sun" class = "weather-images">
+                    <p class = "forecast">some sun</p>
+                </div>
+                <div class="temp">
+                    <p id = "tempNumber6"> 0°F</p>
+                    <p id = "tempNumber7"> 0°F</p>
+
+                </div>
+            </div>
+        </div>
+        <div id="cookie-box">
+            <img src = "cookie.png" alt = "cookie" id = "cookie">
+            <div class="cookie-text">
+                <p id = "stop">Stop! Cookie Time : </p>
+                <p> We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. </p>
+                <a href = "#"> Read more...</a>
+            </div> 
+                <button onclick="makeDisappear()"> I accept </button> <!--Dismiss cookie policy message-->
+        </div>
+    </div> <!--END main container-->
+    <script src = "Dojo-Weather-JS.js"></script> 
+    </body>
+</html>

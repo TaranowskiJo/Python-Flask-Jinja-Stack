@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Layout Concerns</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="make-connections-css.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1>Profile</h1>
+        <ul>
+            <li>Home</li>
+            <li>My Profile</li>
+            <li>Find Connections</li>
+        </ul>
+        <button>Sign Out</button>
+    </div>
+
+    <div class="main">
+        <div class="column-1">
+            <div id="box-1L" class ="content" class="larger-box">
+                <div class="user-banner"></div>
+                    <img src ="user-circle.png" alt ="user-circle" class = "user-1">
+                    <h2 id = "name-1">Jane Doe</h2>
+                    <div class="location-pin">
+                        <img src ="map-marker.png" alt = "map-pin" id = "map-pin">
+                        <p>Seattle</p>
+                    </div>
+                    <p class = "bio">Developer | Engineer |Problem Solver</p>
+                    <p class = "bio">Master of shadows and the internet</p>
+                    <div class="edit-profile">
+                        <img src = "gear.png" alt = "gear" id = "gear">
+                        <a href = "#" onclick="changeUser()">edit profile</a>
+                    </div>
+            </div>
+            <div id="box-2L" class ="content" class="larger-box">
+                <h3>Education</h3>
+                    <p id = "edu-title"> Coding Dojo- Full Stack Bootcamp</p>
+                    <p id = "dates">Dec 2019 - March 2020</p>
+                    <p id = "edu-info">Ninja nja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinjaNinja ninja ninja ninjaNinja ninja ninja ninjaNinja ninja ninja ninjaNinja ninja ninja ninja Ninja ninja ninja ninjaNinja ninja ninja ninjaNinja ninja ninja ninjaNinja ninja ninja ninjaNinja ninja ninja ninjaNinja ninja ninja ninjaNinja ninja ninja ninja</p>
+            </div>
+        </div>
+
+        <div class="column-2">
+            <div id="box-1R" class ="content">
+                <h4 id = "connectionRequests"> 2 Connection Requests </h4>
+                <div class="friend-req" id = "reqOne">
+                    <img src ="user-circle.png" alt ="user-circle" class = "user">
+                    <p class = "friend-req-name"> not a catfish </p>
+                    <div class="req-buttons">
+                        <button class = "approve" onclick = "reqChoose(0)">✔</button>
+                        <button class = "deny" onclick = "reqChoose(1)">X</button>
+                        <!--  MAKE USER CARD DISSAPEAR/SHIFT WHEN BUTTON CLICKED -->
+                    </div> 
+                </div>
+                <div class="friend-req" id = "reqTwo">
+                    <img src ="user-circle.png" alt ="user-circle" class = "user">
+                    <p class = "friend-req-name"> a cat</p>
+                    <div class="req-buttons-2">
+                        <button class = "approve" onclick = "reqChoose(3)">✔</button>
+                        <button class = "deny" onclick = "reqChoose(4)">X</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="box-2R" class ="content" >
+                
+                    <h5 id = "yourConnections">345 Your Connections</h5>
+                
+                <div class="connections-list">
+                    <ul>
+                        <li class ="connections"><img src = "adrien-s.jpg" alt = "Adrian" class = "connection">
+                            Adrian P.</li>
+                        <li class ="connections"><img src = "alayne-s.jpg" alt = "Alayne" class = "connection">
+                            Alayne S.</li>
+                        <li class ="connections"><img src = "arrys.jpg" alt = "Arryn" class = "connection">
+                            Arryn T.</li>
+                        <li class ="connections"><img src = "jane-m.jpg" alt = "Jane" class = "connection">
+                            Janen D.</li>
+                        <li class ="connections"><img src = "phil-s.jpg" alt = "Phil" class = "connection">
+                            Phil C.</li>
+                    </ul>
+                </div>
+                <div class="view-more">
+                    <a href="#">View More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src = "make-connections-js.js"></script> 
+
+</body>
+</html>

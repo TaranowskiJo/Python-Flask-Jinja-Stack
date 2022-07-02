@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    /* border: 1px solid red; */
+}
+
+/* IMAGES *//* IMAGES *//* IMAGES */
+/* IMAGES *//* IMAGES *//* IMAGES */
+/* IMAGES *//* IMAGES *//* IMAGES */
+img {
+    box-shadow: 3px 2px 3px black;
+}
+#leaf {
+    height: 70px;
+    background-color: #00BBB4;
+    border-radius: 10%;
+    cursor:grab;
+    
+}
+#cart {
+    height: 50px;
+    cursor:grab;
+}
+.arrow {
+    box-shadow: none;
+}
+#arrow:hover {
+    transform: scale(1.2);
+    cursor:grab
+}
+#alert {
+    height: 50px;
+    margin-right: 5px;
+}
+#search {
+    height: 20px;
+    cursor:grab;
+    box-shadow:none;
+}
+#succulents {
+    height: 100%;
+}
+.lower-bar {
+    box-sizing: border-box;
+    height: 100px;
+    border-radius: 50%;
+    display: flex-row;
+    margin-right: 40px;
+    
+}
+.lower-bar:hover {
+    transform: scale(1.2);
+}
+.pictures {
+    position: relative;
+    right: -30px; /*HATED DOING IT THIS WAY*/
+    
+}
+#succulents {
+    background:transparent url(succulents-1.jpg);
+}
+#right-aloe {
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 3px #6C9C9C;
+}
+/* TOPNAV *//* TOPNAV *//* TOPNAV */
+/* TOPNAV *//* TOPNAV *//* TOPNAV */
+/* TOPNAV *//* TOPNAV *//* TOPNAV */
+.top-nav {
+    display: flex;
+    width: 80%;
+    margin: 0 auto 25px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 60px;
+    cursor:grab;
+}
+
+h2 {
+    margin: 25px auto;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+}
+
+.top-nav > p {
+    font-size: 35px;
+}
+
+.search {
+    padding: 4px;
+    background-color: #00BBB4;
+    border-radius:5%;
+}
+
+input {
+    align-items: center;
+    background-color: #00BBB4;
+    border: none;
+    box-shadow: none;
+
+}
+#cart-total {
+    display: flex;
+    right: 80px;
+}
+
+
+/* SUBNAV *//* SUBNAV *//* SUBNAV */
+/* SUBNAV *//* SUBNAV *//* SUBNAV */
+/* SUBNAV *//* SUBNAV *//* SUBNAV */
+ul {
+    width: 80%;
+    margin:  0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li:hover {
+    cursor:grab;
+    color: purple;
+}
+
+
+/* MAIN-CONTAINER *//* MAIN-CONTAINER *//* MAIN-CONTAINER */
+/* MAIN-CONTAINER *//* MAIN-CONTAINER *//* MAIN-CONTAINER */
+/* MAIN-CONTAINER *//* MAIN-CONTAINER *//* MAIN-CONTAINER */
+.main-container {
+    margin: 0 auto;
+    width: 80%;
+
+}
+.mid-container {
+    display: flex;
+}
+/* LEFT COLUMN *//* LEFT COLUMN *//* LEFT COLUMN */
+/* LEFT COLUMN *//* LEFT COLUMN *//* LEFT COLUMN */
+/* LEFT COLUMN *//* LEFT COLUMN *//* LEFT COLUMN */
+
+#left-column {
+    height: 300px;
+    padding: 20px;
+    flex: 2;
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #00BBB4;
+}
+.discover {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+/* RIGHT COLUMN *//* RIGHT COLUMN *//* RIGHT COLUMN */
+/* RIGHT COLUMN *//* RIGHT COLUMN *//* RIGHT COLUMN */
+/* RIGHT COLUMN *//* RIGHT COLUMN *//* RIGHT COLUMN */
+
+#right-column {
+
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    /* background-color: blueviolet; */
+    color: white;
+}
+.aloe-arrow {
+    margin: 0 auto;
+    padding: 15px;
+    width: 85%;
+    height: 70px;
+    background-color: blueviolet;
+    box-shadow: 1px 3px 3px purple;
+}
+#right-blurb {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+
+
+
+
+/* LOWER-CONTAINER *//* LOWER-CONTAINER *//* LOWER-CONTAINER */
+/* LOWER-CONTAINER *//* LOWER-CONTAINER *//* LOWER-CONTAINER */
+/* LOWER-CONTAINER *//* LOWER-CONTAINER *//* LOWER-CONTAINER */
+
+.lower-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    background-color: #AAE8D8;
+    justify-content: center;
+    
+}
+
+/* POP-UP *//* POP-UP *//* POP-UP */
+/* POP-UP *//* POP-UP *//* POP-UP */
+/* POP-UP *//* POP-UP *//* POP-UP */
+
+#pop-up {
+    margin: 10px auto 0 auto;
+    padding: 5px;
+    width: 60%;
+    display: flex;
+    border: 3px solid black;
+    align-items: center;
+
+}
+.pop-up > p {
+    font-size: 20px;
+    
+}
+#agree {
+    padding: 5px;
+    width: 130px;
+    color: white;
+    background-color: #00BBB4;
+    border: 1px solid black;
+    box-shadow: 2px 3px 2px black;
+}
+/* 
+/////SHOPPING CART POPUP */
+#yourShopping {
+    visibility: hidden;
+    width: 15%;
+    display: table-column;
+    background-color: pink;
+    height: 25%;
+    overflow: scroll;
+    position: absolute;
+    right: 100px;
+
+}

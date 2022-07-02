@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    /* border: 1px solid red; */
+}
+
+/*IMAGES DEFAULT *//*IMAGES DEFAULT *//*IMAGES DEFAULT */
+/*IMAGES DEFAULT *//*IMAGES DEFAULT *//*IMAGES DEFAULT */
+img {
+    height: 100px;
+}
+.weather-images {
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* NavBar START *//* NavBar START *//* NavBar START */
+/* NavBar START *//* NavBar START *//* NavBar START */
+/* NavBar START *//* NavBar START *//* NavBar START */
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9FC5F8;
+    color: white;
+    padding: 5px;
+    
+
+
+}
+h1 {
+    font-size: 50px;
+    cursor: grab;
+}
+#home {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    font-size: 30px;
+    cursor: grab;
+}
+
+/* NavBar END *//* NavBar END *//* NavBar END */
+/* NavBar END *//* NavBar END *//* NavBar END */
+/* NavBar END *//* NavBar END *//* NavBar END */
+
+.weather-cards {
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*SUB-BAR START*//*SUB-BAR START*//*SUB-BAR START*/
+/*SUB-BAR START*//*SUB-BAR START*//*SUB-BAR START*/
+/*SUB-BAR START*//*SUB-BAR START*//*SUB-BAR START*/
+
+.sub-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-bottom-width: 4px;
+    width: 80%;
+    border-radius:3%;
+    margin: 0 auto;
+
+}
+label {
+    font-size: 20px;
+}
+select {
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+/*SUB-BAR END *//*SUB-BAR END */
+/*SUB-BAR END *//*SUB-BAR END */
+/*SUB-BAR END *//*SUB-BAR END */
+
+/*START CARDS/MAIN *//*START CARDS/MAIN */
+/*START CARDS/MAIN *//*START CARDS/MAIN */
+/*START CARDS/MAIN *//*START CARDS/MAIN */
+.main {
+    margin: 0 auto;
+}
+.weather-cards {
+    width: 75%;
+    height: 400px;
+    margin-top: 30px;
+}
+.card {
+    margin: 10px 20px;
+    padding: 10px; 
+    height: 330px;
+    flex: 1;
+    background-color: #EEEEEE;
+    box-shadow: 1px 2px 2px #EEEEEE;
+    border: 1px solid ;
+
+}
+h2 {
+    padding: 20px;
+    font-size: 35px;
+    font-weight: 300;
+    position: relative;
+    right: 20px
+}
+.day {
+    font-size: 30px;
+}
+
+.forecast {
+    font-size: 26px;
+
+}
+.temp {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Cookie Time*//* Cookie Time*//* Cookie Time*/
+/* Cookie Time*//* Cookie Time*//* Cookie Time*/
+/* Cookie Time*//* Cookie Time*//* Cookie Time*/
+
+#cookie-box {
+    margin: 0 auto;
+    padding: 15px;
+    width: 60%;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    position:fixed;
+    left: 20%;
+    background-color: #EEEEEE;
+    border: 1px solid black;
+}
+#stop {
+    font-size: 25px;
+    font-weight: 600;
+}
+button {
+    padding: 5px;
+    width: 120px;
+    font-size: 18px;
+    color: white;
+    background-color: #9FC5F8;
+    box-shadow: 1px 3px 3px black;
+}
+.top-half {
+    text-align: center;
+}
+
+button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+

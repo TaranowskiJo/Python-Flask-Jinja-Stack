@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Button Up</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="button-clicker-css.css">
+    <script src = "button-clicker-js.js" type = "text/javascript"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <h1>Dojonary</h1>
+        <input type="text" id="search" name="search" placeholder="search">   
+        <button type = "button" id ="log" onclick="login(this)">Login</button> <!--CHANGE TEXT BETWEEN LOGOUT/LOGIN WHEN CLICKED-->
+    </div>
+    <div class="main">
+        <div class="column-1">
+            <div id="add-definition-box-2" class="card">
+                <p class = "by-you">Dojonary is <br> definied by<em>YOU</em></p>
+                <button type = "button" id = "add">Add Definition</button> <!--REMOVE ADD DEF BUTTON WHEN CLICKED-->
+            </div>
+            <div id ="card-1" class = "card">
+                <div class="box-title">
+                    <p class = "vocab"> ninja</p>
+                    <p class = "type"> noun</p>
+                    <p class = "plural"> ninjas</p>
+                    <button type = "button" onClick= "alert('You have liked this!')">5 Likes</button>  <!-- ADD ALERT SAYING DEF WAS LIKED: Could i use js here add clicks?*/-->
+                </div>
+                <div class="definition">
+                    <p>A practictioner skilled in the <a href = "#">Japanese</a> art of <a href = "#"> ninjutsu</a></p>
+                </div>
+            </div>
+            <div id="card-2" class = "card">
+                <div class="box-title">
+                    <p class = "vocab"> ninja</p>
+                    <p class = "type"> noun</p>
+                    <p class = "plural"> ninjas</p>
+                    <button type = "button" onClick= "alert('You have liked this!')"> 37 Likes </button> <!-- ADD ALERT HERE TOO : Could i use js here add clicks?*/-->
+                </div>
+                <div class="definition">
+                    <p> A <a href ="#"> programmer</a> who breaks down problems with <a href = "#">zen</a> like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="column-2">
+            <div id="add-definition-box" class="card">
+                <p id = "by-you">Dojonary is <br> definied by<em>YOU</em></p>
+                <button type = "button" id = "add" onclick="disappear(this)">Add Definition</button> <!--REMOVE ADD DEF BUTTON WHEN CLICKED-->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
